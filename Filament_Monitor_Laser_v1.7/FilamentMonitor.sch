@@ -1,0 +1,635 @@
+EESchema Schematic File Version 4
+LIBS:FilamentMonitor-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Filament Monitor"
+Date "2018-01-13"
+Rev "v1.0"
+Comp "Think3dPrint3d and Escher3d"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L smart:Led_2x2 D1
+U 1 1 58A42AC4
+P 2650 3400
+F 0 "D1" H 2650 3650 50  0000 C CNN
+F 1 "Led_2x2" H 2650 3150 50  0000 C CNN
+F 2 "complib:2x2_SMD_LED" H 2650 3400 50  0001 C CNN
+F 3 " KPTB-1615ESGC " H 2650 3400 50  0001 C CNN
+	1    2650 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 58A42C1D
+P 2550 2900
+F 0 "R3" H 2580 2920 50  0000 L CNN
+F 1 "470R" H 2350 2850 50  0000 L CNN
+F 2 "complib:R_0603" H 2550 2900 50  0001 C CNN
+F 3 "" H 2550 2900 50  0000 C CNN
+	1    2550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 58A42E33
+P 2750 2900
+F 0 "R4" H 2780 2920 50  0000 L CNN
+F 1 "470R" H 2850 2850 50  0000 L CNN
+F 2 "complib:R_0603" H 2750 2900 50  0001 C CNN
+F 3 "" H 2750 2900 50  0000 C CNN
+	1    2750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 58A434ED
+P 2700 2125
+F 0 "R2" V 2800 2075 50  0000 L CNN
+F 1 "330R" V 2610 2000 50  0000 L CNN
+F 2 "complib:R_0603" H 2700 2125 50  0001 C CNN
+F 3 "" H 2700 2125 50  0000 C CNN
+	1    2700 2125
+	0    1    1    0   
+$EndComp
+Text GLabel 2450 2125 0    60   Input ~ 0
+OUT
+Text GLabel 4850 1125 2    60   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR06
+U 1 1 58A4392F
+P 4475 2975
+F 0 "#PWR06" H 4475 2725 50  0001 C CNN
+F 1 "GND" H 4475 2825 50  0000 C CNN
+F 2 "" H 4475 2975 50  0000 C CNN
+F 3 "" H 4475 2975 50  0000 C CNN
+	1    4475 2975
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 1925 0    60   Input ~ 0
+MISO
+$Comp
+L Device:C_Small C1
+U 1 1 58A4419B
+P 2700 5400
+F 0 "C1" H 2710 5470 50  0000 L CNN
+F 1 "0u1" H 2710 5320 50  0000 L CNN
+F 2 "complib:C_0603" H 2700 5400 50  0001 C CNN
+F 3 "" H 2700 5400 50  0000 C CNN
+	1    2700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 58A444A6
+P 3325 5850
+F 0 "C2" V 3375 5900 50  0000 L CNN
+F 1 "4u7" V 3275 5675 50  0000 L CNN
+F 2 "complib:C_0805" H 3325 5850 50  0001 C CNN
+F 3 "" H 3325 5850 50  0000 C CNN
+	1    3325 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 58A44792
+P 3100 5875
+F 0 "#PWR03" H 3100 5625 50  0001 C CNN
+F 1 "GND" H 3100 5725 50  0000 C CNN
+F 2 "" H 3100 5875 50  0000 C CNN
+F 3 "" H 3100 5875 50  0000 C CNN
+	1    3100 5875
+	1    0    0    -1  
+$EndComp
+Text GLabel 3325 5000 1    60   Input ~ 0
+VCC
+$Comp
+L Device:R_Small R5
+U 1 1 58A45924
+P 5500 5750
+F 0 "R5" H 5530 5770 50  0000 L CNN
+F 1 "4K7" H 5300 5700 50  0000 L CNN
+F 2 "complib:R_0603" H 5500 5750 50  0001 C CNN
+F 3 "" H 5500 5750 50  0000 C CNN
+	1    5500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 58A459D3
+P 5800 5750
+F 0 "R6" H 5830 5770 50  0000 L CNN
+F 1 "4K7" H 5600 5700 50  0000 L CNN
+F 2 "complib:R_0603" H 5800 5750 50  0001 C CNN
+F 3 "" H 5800 5750 50  0000 C CNN
+	1    5800 5750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 6250 2    60   Input ~ 0
+SCL
+Text GLabel 5950 6050 2    60   Input ~ 0
+SDA/MOSI
+Text GLabel 3300 1800 0    60   Input ~ 0
+SCL
+Text GLabel 3300 2050 0    60   Input ~ 0
+SDA/MOSI
+$Comp
+L Device:R_Small R1
+U 1 1 58A4783B
+P 2100 1400
+F 0 "R1" H 2130 1420 50  0000 L CNN
+F 1 "4K7" H 1900 1350 50  0000 L CNN
+F 2 "complib:R_0603" H 2100 1400 50  0001 C CNN
+F 3 "" H 2100 1400 50  0000 C CNN
+	1    2100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 58A481C2
+P 7470 3050
+F 0 "L1" V 7570 3000 50  0000 L CNN
+F 1 "220R @100mhz" V 7495 3545 50  0000 L CNN
+F 2 "complib:R_0603" H 7470 3050 50  0001 C CNN
+F 3 "BLM18KG221SN1D" H 7470 3050 50  0001 C CNN
+	1    7470 3050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7270 3050 0    60   Input ~ 0
+VCC
+Text GLabel 3325 2700 0    60   Input ~ 0
+RST
+Text GLabel 7270 2800 0    60   Input ~ 0
+OUT
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even P2
+U 1 1 58A49DF9
+P 7625 4325
+F 0 "P2" H 7625 4525 50  0000 C CNN
+F 1 "PROG" H 7625 4125 50  0000 C CNN
+F 2 "complib:Test_Point_2x3" H 7625 3125 50  0001 C CNN
+F 3 "" H 7625 3125 50  0000 C CNN
+	1    7625 4325
+	1    0    0    -1  
+$EndComp
+Text GLabel 7225 4200 0    60   Input ~ 0
+MISO
+Text GLabel 7225 4325 0    60   Input ~ 0
+SCL
+Text GLabel 7225 4450 0    60   Input ~ 0
+RST
+Text GLabel 8050 4200 2    60   Input ~ 0
+VCC
+Text GLabel 8025 4325 2    60   Input ~ 0
+SDA/MOSI
+$Comp
+L power:GND #PWR08
+U 1 1 58A4A747
+P 7925 4525
+F 0 "#PWR08" H 7925 4275 50  0001 C CNN
+F 1 "GND" H 7925 4375 50  0000 C CNN
+F 2 "" H 7925 4525 50  0000 C CNN
+F 3 "" H 7925 4525 50  0000 C CNN
+	1    7925 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole M2
+U 1 1 58A4C339
+P 1000 7450
+F 0 "M2" H 1000 7300 60  0000 C CNN
+F 1 "Mounting" H 1000 7600 60  0000 C CNN
+F 2 "complib:MountingHole_2.9mm" H 1000 7450 60  0001 C CNN
+F 3 "" H 1000 7450 60  0000 C CNN
+	1    1000 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole M3
+U 1 1 58A4C5D3
+P 1500 7450
+F 0 "M3" H 1500 7300 60  0000 C CNN
+F 1 "Mounting" H 1500 7600 60  0000 C CNN
+F 2 "complib:MountingHole_2.9mm" H 1500 7450 60  0001 C CNN
+F 3 "" H 1500 7450 60  0000 C CNN
+	1    1500 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3d_Logo:Duet3D_Logo M1
+U 1 1 58A4C6F6
+P 950 6950
+F 0 "M1" H 950 6800 60  0000 C CNN
+F 1 "LOGO" H 950 7100 60  0000 C CNN
+F 2 "complib:LOGO_Duet3dCompatible" H 950 6950 60  0001 C CNN
+F 3 "" H 950 6950 60  0000 C CNN
+	1    950  6950
+	1    0    0    -1  
+$EndComp
+Text Notes 7630 4720 0    39   ~ 0
+Pads only
+Text Notes 6000 1700 0    60   ~ 0
+C1 /C3 will be  close enough to both chips
+Text GLabel 2175 1050 2    60   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR01
+U 1 1 5915F46B
+P 2150 3750
+F 0 "#PWR01" H 2150 3500 50  0001 C CNN
+F 1 "GND" H 2150 3600 50  0000 C CNN
+F 2 "" H 2150 3750 50  0000 C CNN
+F 3 "" H 2150 3750 50  0000 C CNN
+	1    2150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L smart:PAT9125 U1
+U 1 1 5A2BEC68
+P 4150 5950
+F 0 "U1" H 4150 6400 60  0001 C CNN
+F 1 "PAT9125" H 4150 5450 60  0000 C CNN
+F 2 "complib:PAC7640" H 4150 5950 60  0001 C CNN
+F 3 "" H 4150 5950 60  0000 C CNN
+	1    4150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5A2C0AAA
+P 4900 5575
+F 0 "#PWR05" H 4900 5325 50  0001 C CNN
+F 1 "GND" H 4900 5425 50  0000 C CNN
+F 2 "" H 4900 5575 50  0000 C CNN
+F 3 "" H 4900 5575 50  0000 C CNN
+	1    4900 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5A2C21F3
+P 3500 6775
+F 0 "#PWR04" H 3500 6525 50  0001 C CNN
+F 1 "GND" H 3500 6625 50  0000 C CNN
+F 2 "" H 3500 6775 50  0000 C CNN
+F 3 "" H 3500 6775 50  0000 C CNN
+	1    3500 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5A2C2D0A
+P 2425 5400
+F 0 "C3" H 2435 5470 50  0000 L CNN
+F 1 "10u" H 2435 5320 50  0000 L CNN
+F 2 "complib:C_0805" H 2425 5400 50  0001 C CNN
+F 3 "" H 2425 5400 50  0000 C CNN
+	1    2425 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5A2C2E68
+P 2725 6475
+F 0 "C6" H 2735 6545 50  0000 L CNN
+F 1 "0u1" H 2735 6395 50  0000 L CNN
+F 2 "complib:C_0603" H 2725 6475 50  0001 C CNN
+F 3 "" H 2725 6475 50  0000 C CNN
+	1    2725 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5A2C2E6E
+P 2475 6475
+F 0 "C5" H 2485 6545 50  0000 L CNN
+F 1 "10u" H 2485 6395 50  0000 L CNN
+F 2 "complib:C_0805" H 2475 6475 50  0001 C CNN
+F 3 "" H 2475 6475 50  0000 C CNN
+	1    2475 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5A2C2EAC
+P 2575 5650
+F 0 "#PWR02" H 2575 5400 50  0001 C CNN
+F 1 "GND" H 2575 5500 50  0000 C CNN
+F 2 "" H 2575 5650 50  0000 C CNN
+F 3 "" H 2575 5650 50  0000 C CNN
+	1    2575 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 5850 2    60   Input ~ 0
+MOTION
+Text GLabel 3375 2525 0    60   Input ~ 0
+MOTION
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5A2C8822
+P 2300 1800
+F 0 "J1" H 2300 1900 50  0000 C CNN
+F 1 "SW" V 2025 1650 50  0000 C CNN
+F 2 "complib:PIN_ARRAY_2X1" H 2300 1800 50  0001 C CNN
+F 3 "" H 2300 1800 50  0001 C CNN
+	1    2300 1800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3475 1725
+Text GLabel 5825 3575 0    60   Input ~ 0
+PA0
+Text GLabel 5830 3150 0    60   Input ~ 0
+PA1
+Text GLabel 3225 1200 0    60   Input ~ 0
+PA0
+Text GLabel 3225 1325 0    60   Input ~ 0
+PA1
+$Comp
+L power:GND #PWR07
+U 1 1 5A330555
+P 7275 3350
+F 0 "#PWR07" H 7275 3100 50  0001 C CNN
+F 1 "GND" H 7275 3200 50  0000 C CNN
+F 2 "" H 7275 3350 50  0001 C CNN
+F 3 "" H 7275 3350 50  0001 C CNN
+	1    7275 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 P1
+U 1 1 5A330ED9
+P 7900 3050
+F 0 "P1" H 7900 3250 50  0000 C CNN
+F 1 "OUTPUT" V 8000 3050 50  0000 C CNN
+F 2 "complib:PIN_ARRAY_3X1" V 7900 3050 50  0001 C CNN
+F 3 "" H 7900 3050 50  0000 C CNN
+	1    7900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3100 2550 3000
+Wire Wire Line
+	2750 3100 2750 3000
+Wire Wire Line
+	2550 2325 2550 2800
+Wire Wire Line
+	4475 1125 4850 1125
+Wire Wire Line
+	2150 3700 2150 3750
+Connection ~ 2550 3700
+Wire Wire Line
+	2600 2125 2450 2125
+Wire Wire Line
+	5500 5275 5500 5650
+Wire Wire Line
+	5800 5275 5800 5650
+Connection ~ 5500 5275
+Wire Wire Line
+	4700 6050 5500 6050
+Wire Wire Line
+	5500 5850 5500 6050
+Connection ~ 5500 6050
+Wire Wire Line
+	4700 6250 5800 6250
+Wire Wire Line
+	5800 5850 5800 6250
+Connection ~ 5800 6250
+Connection ~ 2150 3700
+Wire Wire Line
+	7270 3050 7370 3050
+Wire Wire Line
+	7570 2950 7570 2800
+Wire Wire Line
+	7570 2800 7270 2800
+Wire Wire Line
+	4800 5850 4700 5850
+Wire Wire Line
+	4700 5650 4750 5650
+Wire Wire Line
+	4750 5650 4750 5500
+Wire Wire Line
+	4750 5500 4900 5500
+Wire Wire Line
+	4900 5500 4900 5575
+Wire Wire Line
+	3600 5850 3425 5850
+Wire Wire Line
+	3225 5850 3100 5850
+Wire Wire Line
+	3100 5850 3100 5875
+Wire Wire Line
+	3600 6250 3500 6250
+Wire Wire Line
+	3500 6250 3500 6675
+Wire Wire Line
+	3475 5650 3600 5650
+Wire Wire Line
+	3475 5100 3475 5275
+Wire Wire Line
+	2425 5100 2700 5100
+Wire Wire Line
+	2700 5100 2700 5300
+Wire Wire Line
+	2425 5100 2425 5300
+Connection ~ 2700 5100
+Wire Wire Line
+	3325 5000 3325 5100
+Connection ~ 3325 5100
+Wire Wire Line
+	2425 5500 2425 5600
+Wire Wire Line
+	2425 5600 2575 5600
+Wire Wire Line
+	2575 5600 2575 5650
+Wire Wire Line
+	2700 5600 2700 5500
+Connection ~ 2575 5600
+Wire Wire Line
+	3600 6050 3325 6050
+Wire Wire Line
+	3325 6050 3325 6125
+Wire Wire Line
+	2725 6125 2725 6375
+Wire Wire Line
+	2475 6125 2475 6375
+Connection ~ 2725 6125
+Wire Wire Line
+	2475 6575 2475 6675
+Wire Wire Line
+	2475 6675 2725 6675
+Connection ~ 3500 6675
+Wire Wire Line
+	2725 6575 2725 6675
+Connection ~ 2725 6675
+Wire Wire Line
+	3475 5275 5500 5275
+Connection ~ 3475 5275
+Wire Wire Line
+	2925 6125 2925 5100
+Connection ~ 2925 5100
+Wire Wire Line
+	3300 2050 3400 2050
+Wire Wire Line
+	3400 2050 3400 2025
+Wire Wire Line
+	3400 2025 3475 2025
+Wire Wire Line
+	3300 1925 3475 1925
+Wire Wire Line
+	3300 1800 3375 1800
+Wire Wire Line
+	3375 1800 3375 1825
+Wire Wire Line
+	3375 1825 3475 1825
+Wire Wire Line
+	3375 2525 3475 2525
+Wire Wire Line
+	3475 1625 3300 1625
+Wire Wire Line
+	3300 1625 3300 1550
+Wire Wire Line
+	3475 2125 2800 2125
+Wire Wire Line
+	3300 1550 2100 1550
+Wire Wire Line
+	2100 1500 2100 1550
+Wire Wire Line
+	2100 1300 2100 1050
+Wire Wire Line
+	2100 1050 2175 1050
+Connection ~ 2100 1550
+Wire Wire Line
+	2100 1900 2100 3700
+Wire Wire Line
+	2100 3700 2150 3700
+Wire Wire Line
+	2750 2800 2750 2425
+Wire Wire Line
+	2750 2425 3475 2425
+Wire Wire Line
+	2550 2325 3475 2325
+Wire Wire Line
+	3325 2700 3400 2700
+Wire Wire Line
+	3400 2700 3400 2625
+Wire Wire Line
+	3400 2625 3475 2625
+Wire Wire Line
+	3475 1525 3375 1525
+Wire Wire Line
+	3375 1525 3375 1325
+Wire Wire Line
+	3375 1325 3225 1325
+Wire Wire Line
+	3475 1425 3475 1200
+Wire Wire Line
+	3475 1200 3225 1200
+Wire Wire Line
+	7700 3150 7275 3150
+Wire Wire Line
+	7275 3150 7275 3350
+Wire Wire Line
+	7700 2950 7570 2950
+Wire Wire Line
+	7700 3050 7570 3050
+$Comp
+L Connector_Generic:Conn_01x02 P3
+U 1 1 5A554D9E
+P 6175 3300
+F 0 "P3" H 6275 3450 50  0000 C CNN
+F 1 "M2" H 6275 3151 50  0000 C CNN
+F 2 "complib:SJ" V 6249 3300 50  0001 C CNN
+F 3 "" H 6175 3300 50  0001 C CNN
+	1    6175 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny44A-MMH-PAD U2
+U 1 1 5A556466
+P 4475 2025
+F 0 "U2" H 3625 2775 50  0000 C CNN
+F 1 "ATtiny44A-MFR  /  ATtiny44A-MUR" H 4450 1250 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 4475 1825 50  0001 C CIN
+F 3 "" H 4475 2025 50  0001 C CNN
+	1    4475 2025
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3700 2750 3700
+Wire Wire Line
+	5500 5275 5800 5275
+Wire Wire Line
+	5500 6050 5950 6050
+Wire Wire Line
+	5800 6250 5950 6250
+Wire Wire Line
+	2150 3700 2550 3700
+Wire Wire Line
+	2700 5100 2925 5100
+Wire Wire Line
+	3325 5100 3475 5100
+Wire Wire Line
+	2575 5600 2700 5600
+Wire Wire Line
+	2725 6125 2475 6125
+Wire Wire Line
+	3500 6675 3500 6775
+Wire Wire Line
+	2725 6675 3500 6675
+Wire Wire Line
+	3475 5275 3475 5650
+Wire Wire Line
+	2925 5100 3325 5100
+Wire Wire Line
+	2100 1550 2100 1800
+Wire Wire Line
+	2725 6125 2925 6125
+Wire Wire Line
+	4475 2925 4475 2975
+Wire Wire Line
+	5975 3300 5925 3300
+Wire Wire Line
+	5925 3300 5925 3150
+Wire Wire Line
+	5830 3150 5925 3150
+Wire Wire Line
+	5900 3400 5975 3400
+Wire Wire Line
+	5825 3575 5900 3575
+Wire Wire Line
+	5900 3575 5900 3400
+Wire Wire Line
+	7225 4200 7325 4200
+Wire Wire Line
+	7325 4200 7325 4225
+Wire Wire Line
+	7325 4225 7425 4225
+Wire Wire Line
+	7425 4325 7225 4325
+Wire Wire Line
+	7425 4425 7325 4425
+Wire Wire Line
+	7325 4425 7325 4450
+Wire Wire Line
+	7325 4450 7225 4450
+Wire Wire Line
+	7925 4525 7925 4425
+Wire Wire Line
+	8025 4325 7925 4325
+Wire Wire Line
+	8050 4200 7975 4200
+Wire Wire Line
+	7975 4200 7975 4225
+Wire Wire Line
+	7975 4225 7925 4225
+Connection ~ 2925 6125
+Wire Wire Line
+	2925 6125 3325 6125
+$EndSCHEMATC
