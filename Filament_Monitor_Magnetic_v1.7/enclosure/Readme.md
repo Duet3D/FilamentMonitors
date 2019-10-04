@@ -1,0 +1,1 @@
+Note: The enclosure is not specifically designed for FDM printing - it is possible to print it on an FDM machien but layer height tweaking/sanding will be required to acheive the correct magnet to sensor offset.

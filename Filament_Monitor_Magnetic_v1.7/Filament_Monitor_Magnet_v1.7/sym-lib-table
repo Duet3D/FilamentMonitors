@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name FilamentMonitor-cache)(type Legacy)(uri ${KIPRJMOD}/FilamentMonitor-cache.lib)(options "")(descr ""))
+  (lib (name FilamentMonitor-rescue)(type Legacy)(uri ${KIPRJMOD}/FilamentMonitor-rescue.lib)(options "")(descr ""))
+)
