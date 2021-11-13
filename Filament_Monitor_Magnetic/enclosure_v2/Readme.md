@@ -1,0 +1,1 @@
+If you have issues downloading the individual stls there is a zip containing all four.
